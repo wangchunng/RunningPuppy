@@ -1,0 +1,12 @@
+body{
+    margin: 0 100px;
+    position: relative;
+}
+img{            	
+    visibility: hidden;
+    height: 60;
+    width: 97;
+    /* left: 0px; */
+    /* top: 100px; */
+    position: absolute;
+}

@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 	<html>
-		<!-- <link href="css/Lab10_part2.css" ref="stylesheet"> -->
-		<!-- <script src="script/Lab10_part2.js"></script> -->
-		
-	<!-- Name: Wang Chun NG 
-	Date: April 6, 2022 
-	Lab 10 _ JavaScript Part II runningPuppy  -->
-
 		<head>
 			<meta charset="utf-8">
 			<meta name="author" content="Bambang">
-			<title>Running Puppy</title>
-			
-			<style> 
-				div {
-				  width: 100px;
-				  height: 100px;
-				  position: relative;
-				  animation-name: runningPuppy;
-				  animation-duration: 5s;
-				  animation-iteration-count: infinite;
-				  animation-direction:normal;  
-				}
-				
-				@keyframes runningPuppy {
-				  0%   {left:0px; top:100px;}
-				  25%  {left:300px; top:100px;}
-				  50%  {left:600px; top:100px;}
-				  75%  {left:900px; top:100px;}
-				  100% {left:1200px; top:100px;}
-				}
-				</style>
-			
+			<title>Running Puppy</title>	
+			<script src="Lab10_part2.js"></script>
+			<link href="css/Lab10_part2.css"> 
+
 		</head>
-		<body >
+		<body onload="setInterval('runPuppy()', 100);">
+
 			<h1>Running Puppy</h1>
-			<div>
-				<img class="puppy" src="images/puppy.gif"> 
-				
-			</div>
+			<p>
+
+				<img id="puppy" src="puppy.gif">   
+
+			</p>
 		</body>
 </html>
